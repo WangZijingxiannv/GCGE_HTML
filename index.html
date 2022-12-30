@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GCGE Manual</title>
+    <title>GCGE: Home Page</title>
   </head>
   <body style="margin: 0;">
     <h1>GCGE&#8201;&#8212;&#8201;Generalized conjugate gradient eigensolver</h1>
@@ -18,7 +17,33 @@
   </body>
   <style type="text/css">
     /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
-    
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
     /* Default font. */
     body {
       /* font-family: Georgia,serif; */
@@ -47,7 +72,7 @@
       text-decoration: underline;
     }
     a:visited {
-      color: fuchsia;
+      color: black;
     }
     
     em {
@@ -748,33 +773,39 @@
     </head>
     <body class="article">
     <div id="header">
+      <div class="topnav">
+        <a href="#Overview">Overview</a>
+        <a href="#Software">Software</a>
+        <a href="#Documentation">Documentation</a>
+        <a href="#Developers">Developers</a>
+      </div>
     <!-- <h1>GCGE&#8201;&#8212;&#8201;Generalized conjugate gradient eigensolver</h1> -->
-    <div id="toc">
-      <div id="toctitle">Menu</div>
+    <!-- <div id="toc"> -->
+      <!-- <div id="toctitle">Menu</div> -->
       <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
-    </div>
-    </div>
-    <div id="content">
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div id="content">
     <div id="preamble">
     <div class="sectionbody">
-    <div class="tableblock">
-    <table rules="none"
+    <div class="tableblock">-->
+     <table rules="none" 
     width="100%"
     frame="void"
     cellspacing="0" cellpadding="4">
     <col width="33%" />
-    <!-- <col width="33%" />
+     <!-- <col width="33%" />
     <col width="33%" /> -->
     <tbody>
     <!-- <tr> -->
     <td align="center" valign="top"><p class="table"><span class="image">
-    <img src="https://raw.githubusercontent.com/WangZijingxiannv/GCGE_HTML/main/gcge_mainprocedure.jpg" alt="LAPACK" width="1000" height="608" />
+    <img src="https://raw.githubusercontent.com/WangZijingxiannv/GCGE_HTML/main/software.jpg" alt="LAPACK" width="1000" height="608" />
     </span></p></td>
     <!-- </tr> -->
     </tbody>
     </table>
     <div class="sect1">
-    <h2 id="_Overview">Overview</h2>
+    <h2 id="Overview">Overview</h2>
     <div class="sectionbody">
 
 
@@ -796,7 +827,7 @@ from these softwares/libraries to the GCGE package.
   </div>
     </div>
     <div class="sect1">
-    <h2 id="_software">Software</h2>
+    <h2 id="Software">Software</h2>
     <div class="sectionbody">
    <div class="paragraph"><p>We can divide GCGE into three levels:</p>
     <div class="ulist"><ul>
@@ -843,7 +874,7 @@ from these softwares/libraries to the GCGE package.
     </p>
     </li>
     </ul></div>
-    </div>
+
 
     <div class="paragraph"><p>Configure and install:  <a href="https://raw.githubusercontent.com/WangZijingxiannv/GCGE_HTML/main/readme.md" download="readme.md">install_GCGE</a></p>
     <div class="sect2">
@@ -859,7 +890,7 @@ from these softwares/libraries to the GCGE package.
     <li>
     <p>
     <div class="sect1">
-    <h2 id="_documentation">Documentation</h2>
+    <h2 id="Documentation">Documentation</h2>
     <div class="sectionbody">
       <div style="float: center; padding: 1em; margin-left: 28em; margin-top: 0.5em; background-color: #eff3f8; text-align: center; width: 30%;">
         Parallel Solution of Large-scale
@@ -927,7 +958,7 @@ from these softwares/libraries to the GCGE package.
   </div>
 </div>
 <div class="sect1">
-<h2 id="_developers">Developers</h2>
+<h2 id="Developers">Developers</h2>
 <div class="paragraph"><p><a href="http://lsec.cc.ac.cn/~hhxie/">Hehu Xie</a></p></div>
 <div class="paragraph"><p><a href="https://arxiv.org/abs/2111.06552">Yu Li</a></p></div>
 <div class="paragraph"><p><a href="https://arxiv.org/abs/2111.06552">Ning Zhang</a></p></div>
